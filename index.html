@@ -1,142 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/a.png">
-
-    <!-- Meta information -->
-    <title>axelele</title>
-    <meta name="description"
-          content="">
-    <link rel="canonical"
-          href="https://axelele.com/" />
-    <link href="css/prism.css" rel="stylesheet">
-
-    <!-- Prism.js -->
-
-    <link rel="stylesheet" href="css/style.css" />
-
-
-
-    <!-- Custom style -->
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
-
-
-
-    <!-- 'jekyll-seo' plugin -->
-    <!-- Begin Jekyll SEO tag v2.6.1 -->
-    <title>axelele</title>
-    <meta name="generator" content="Jekyll v3.8.5" />
-    <meta property="og:title" content="axelele" />
-    <meta property="og:locale" content="en_US" />
-    <link rel="canonical" href="https://axelele.com/" />
-    <meta property="og:url" content="https://axelele.com/" />
-    <meta property="og:site_name" content="axelele" />
-    <script type="application/ld+json">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="icon" href="img/a.png">
+  <!-- Meta information -->
+  <title>axelele</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://axelele.com/" />
+  <link href="css/prism.css" rel="stylesheet">
+  <!-- Prism.js -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Custom style -->
+  <!-- <link rel="stylesheet" href="css/main.css" /> -->
+  <!-- 'jekyll-seo' plugin -->
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+  <title>axelele</title>
+  <meta name="generator" content="Jekyll v3.8.5" />
+  <meta property="og:title" content="axelele" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="canonical" href="https://axelele.com/" />
+  <meta property="og:url" content="https://axelele.com/" />
+  <meta property="og:site_name" content="axelele" />
+  <script type="application/ld+json">
         {"@type":"WebSite","url":"https://axelele.com/","headline":"axelele","name":"axelele","@context":"https://schema.org"}</script>
-    <!-- End Jekyll SEO tag -->
-
-
-    <script src="js/prism.js"></script>
-    <link rel="stylesheet" href="css/prism.css" />
-
-
+  <!-- End Jekyll SEO tag -->
+  <script src="js/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  <script defer src="https://unpkg.com/p5.collide2d"></script>
+  <script src="sketchIndex.js"></script>
+  <link rel="stylesheet" href="css/prism.css" />
 </head>
-
-
 <body>
-<div class="container">
+  <div class="container" id="cnv">
     <div class="header">
-        <!-- <a href="https://github.com/akselele"> -->
-        <a class="site-avatar-home-link" href="index.html"><img class="site-avatar" src="img/axel.jpeg"></a>
-        <!-- </a> -->
-        <div class="top-nav">
-            <h1 class="site-title">axelele</h1>
-            <div class="social-container">
-
-
-
-                <div class="social-link">
-
-                    <a href="cv.html">
-
-                        curriculum vitae
-                    </a>
-                </div>
-
-
-
-
-                <div class="social-link">
-
-                    <a href="contact.html">
-
-                        contact
-                    </a>
-                </div>
-
-
-
-
-                <div class="social-link">
-
-                    <a href="https://github.com/akselele" target="_blank">
-
-                        github
-                    </a>
-                </div>
-
-
-                <div class="social-link">
-
-                    <a href="https://www.linkedin.com/in/axel-hamelryck-202138152/" target="_blank">
-
-                        linkedin
-                    </a>
-                </div>
-
-            </div>
+      <!-- <a href="https://github.com/akselele"> -->
+      <a class="site-avatar-home-link" href="index.html"><img class="site-avatar" src="img/axel.jpeg"></a>
+      <!-- </a> -->
+      <div class="top-nav">
+        <h1 class="site-title">axelele</h1>
+        <div class="social-container">
+          <div class="social-link">
+            <a href="cv.html">
+              curriculum vitae
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="projects.html">
+              projects
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="contact.html">
+              contact
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="https://github.com/akselele" target="_blank">
+              github
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="https://www.linkedin.com/in/axel-hamelryck-202138152/" target="_blank">
+              linkedin
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <div>
-        <meta property="og:title" content="axelele" />
-
-        <meta property="og:type" content="website" />
-
-        <meta property="og:image" content="https://github.com/akselele.png" />
-
-
-
-
-        <div class="content">
-
-            <h1 id="axel-hamelryck">Axel Hamelryck</h1>
-
-            <p>I am a student from Haacht, following Applied Informatics in Leuven, Belgium. I have chosen the software development specialization
-            because I thought my programming was good enough to pursue a career in it.</p>
-
-
-            <p>I have always been passionate about computers, and it's what got me into programming. Even long before studying in college, I was already learning about programming
-            languages (C# and C++) and the general working of computers.</p>
-
-            <p>In my free time, I like to play games. Sometimes a little too much which almost got me studying game development.</p>
-
-
-        </div>
-
-        <footer class="footer">
-            <hr/>
-        </footer>
-
-
-
+      <meta property="og:title" content="axelele" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://github.com/akselele.png" />
+      <div>
+        <h1 id="axel-hamelryck">Axel Hamelryck</h1>
+        <p>I'm a newly graduated student from UCLL in Applied Information Technology, specialized in software development.</p>
+        <p>My main area of work is full stack web development in Node.js / Javascript in general.</p>
+        <p>On my portfolio you can find my CV and my old as well as my current projects.</p>
+      </div>
+      <footer class="footer">
+        <hr />
+      </footer>
     </div>
-</div>
-</div>
+  </div>
+  </div>
 </body>
-
 </html>
